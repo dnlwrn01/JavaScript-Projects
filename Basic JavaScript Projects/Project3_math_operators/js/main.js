@@ -80,4 +80,5 @@ document.write(Math.random() * 100);
 
 document.write("<br>") //break line
 
+//math method
 document.write(Math.round(-4.2));    // returns -4
