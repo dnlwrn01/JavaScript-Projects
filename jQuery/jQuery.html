@@ -10,6 +10,7 @@
 <body>
     
 <script>
+//function appends when document is loaded
 $(document).ready(function() {
     $("html").append(
         "<body>\
@@ -24,18 +25,23 @@ $(document).ready(function() {
             </div>\
         </body>"
     );
+
+    //functions to change <p> colors
     $("#1").css({"color": "red"});
     $("#2").css({"color": "green"});
     $("#3").css({"color": "blue"});
 
+    //hide <p1> when <p4> is clicked
     $("#1").click(function() {
         $("#4").hide().fade();
     });
 
+    //change <p2> color on hover
     $("#2").hover( function() {
         $("#2").css({"color":"orange"});
     });
 
+    //hide <h1> when <p3> is clicked
     $("#3").click(function () {
         $("h1").hide().fade();
     });
